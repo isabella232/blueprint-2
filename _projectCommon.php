@@ -32,7 +32,7 @@
 	$Nav->addCustomNav("Getting Involved", "/project/developers", "_blank", 3);
 
 	# Define keywords, author and title here, or in each PHP page specifically
-	$pageKeywords	= "osgi blueprint spring ioc dynamic services rfc-124"
+	#$pageKeywords	= "eclipse, osgi, blueprint, spring, ioc, dynamic, services, rfc-124"
 	$pageAuthor		= "Costin Leau";
     $pageTitle 		= "Eclipse Gemini Blueprint - Incubation";
 

@@ -16,7 +16,7 @@
 	$localVersion = false;
 	
 	# Define these here, or in _projectCommon.php for site-wide values
-	$pageKeywords	= "eclipse, osgi, blueprint, spring, ioc, dynamic, services, rfc-124";
+	#$pageKeywords	= "eclipse, osgi, blueprint, spring, ioc, dynamic, services, rfc-124";
 	$pageAuthor		= "Costin Leau";
 	$pageTitle 		= "Eclipse Gemini Blueprint - Incubation";
 	
