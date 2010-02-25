@@ -21,13 +21,13 @@
      - database; You can override the name stored on the database by filling 
      - the <name/> tag
     -->
-  <name>Phoenix Project</name>
+  <name>Gemini Blueprint Project</name>
     
   <!--     
      - Each project can also have a short name to be used in HTML lists and 
      - other horizontally challenged places.
     -->
-  <short-name>Phoenix</short-name>
+  <short-name>Blueprint</short-name>
   
   <!--
      - Each Eclipse project has one or more Bugzilla products and components.
