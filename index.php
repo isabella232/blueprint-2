@@ -20,7 +20,7 @@
 	
 	include($App->getProjectCommon());
 	
-	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="/blueprint/resources/style.css"/>');
+	#$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="/blueprint/resources/style.css"/>');
 	$localVersion = false;
 	
 	# Define these here, or in _projectCommon.php for site-wide values
