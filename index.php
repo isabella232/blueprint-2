@@ -7,7 +7,7 @@
  * http://www.eclipse.org/legal/epl-v10.html
  *
  * Contributors:
- *    
+ *    Costin Leau - VMware
  *******************************************************************************/
 
 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	
@@ -20,13 +20,8 @@
 	
 	include($App->getProjectCommon());
 	
-	$localVersion = false;
-	
 	# Define these here, or in _projectCommon.php for site-wide values
-	#$pageKeywords	= "eclipse, osgi, blueprint, spring, ioc, dynamic, services, rfc-124";
-	#$pageAuthor		= "Costin Leau";
 	$pageTitle 		= "Eclipse Gemini Blueprint - Home";
-	
 	
 	// 	# Paste your HTML content between the EOHTML markers!
 	$html = file_get_contents('pages/_index.html');

@@ -45,7 +45,3 @@ a:hover {
 #search #searchBox {
 	width:220px;
 }
-
-#novaContent li {
-	list-style-image: url("/blueprint/images/bullet.png");
-}
