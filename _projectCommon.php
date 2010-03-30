@@ -27,10 +27,10 @@
 	# Break the navigation into sections
 	$Nav->addNavSeparator("Gemini Blueprint ", 	"/blueprint");
 	$Nav->addCustomNav("Download", "/blueprint/download", "_self", 3);
-	$Nav->addCustomNav("Documentation", "/blueprint/documentation", "_blank", 3);
-	$Nav->addCustomNav("Support", "/blueprint/support", "_blank", 3);
-	$Nav->addCustomNav("Getting Involved", "/blueprint/contribute", "_blank", 3);
-	$Nav->addCustomNav("History", "/blueprint/history", "_blank", 3);
+	$Nav->addCustomNav("Documentation", "/blueprint/documentation", "_self", 3);
+	$Nav->addCustomNav("Support", "/blueprint/support", "_self", 3);
+	$Nav->addCustomNav("Getting Involved", "/blueprint/contribute", "_self", 3);
+	$Nav->addCustomNav("History", "/blueprint/history", "_self", 3);
 
 
 	# Define keywords, author and title here, or in each PHP page specifically
@@ -49,7 +49,7 @@
 	# $Menu->addMenuItem("Developers", "/project/developers", "_self");
 	
 	# To define additional CSS or other pre-body headers
-	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="/blueprint/resources/style.css"/>');
+	$App->AddExtraHtmlHeader('<link media="screen" rel="stylesheet" type="text/css" href="/blueprint/resources/style.css"/>');
 	
 	# To enable occasional Eclipse Foundation Promotion banners on your pages (EclipseCon, etc)
 	$App->Promotion = TRUE;
