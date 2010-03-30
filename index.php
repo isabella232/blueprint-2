@@ -20,9 +20,9 @@
 	
 	include($App->getProjectCommon());
 	
-	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="/default/style.css"/>');
+	# $App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="/default/style.css"/>');
+	# $localVersion = false;
 	
-	$localVersion = false;
 	
 	# Define these here, or in _projectCommon.php for site-wide values
 	$pageAuthor		= "Costin Leau";
