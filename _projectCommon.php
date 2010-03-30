@@ -47,11 +47,11 @@
 	# $Menu->addMenuItem("Developers", "/project/developers", "_self");
 	
 	# To define additional CSS or other pre-body headers
-	# $App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="/default/style.css"/>');
+	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="/blueprint/resources/style.css"/>');
 	
 	# To enable occasional Eclipse Foundation Promotion banners on your pages (EclipseCon, etc)
 	$App->Promotion = TRUE;
 	
 	# If you have Google Analytics code, use it here
-	# $App->SetGoogleAnalyticsTrackingCode("YOUR_CODE");
+	# $App->SetGoogleAnalyticsTrackingCode("UA-2728886-3");
 ?>
