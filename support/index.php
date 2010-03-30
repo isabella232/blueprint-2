@@ -21,8 +21,6 @@
 
 	# Begin: page-specific settings.  Change these. 
 	$pageTitle 		= "Gemini OSGi Blueprint - Support";
-	$pageKeywords	= "Eclipse, Gemini, OSGi, Support, Spring, Dynamic Modules, Blueprint";
-	$pageAuthor		= "Costin Leau";
 	
 	// 	# Paste your HTML content between the EOHTML markers!
 	$html = file_get_contents('_index.html');

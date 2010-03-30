@@ -19,16 +19,9 @@
 	$Menu 	= new Menu();		
 	
 	include($App->getProjectCommon());
-	
-	# $App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="/default/style.css"/>');
-	# $localVersion = false;
-	
-	
-	# Define these here, or in _projectCommon.php for site-wide values
-	$pageAuthor		= "Costin Leau";
-	$pageTitle 		= "Eclipse Gemini Blueprint - Incubation - Home";
-	$pageKeywords	= "eclipse, osgi, blueprint, spring, ioc, dynamic, services, rfc-124, home";
-	
+
+	$pageTitle 		= "Gemini OSGi Blueprint - Home";
+		
 	// 	# Paste your HTML content between the EOHTML markers!
 	$html = file_get_contents('pages/_index.html');
 

@@ -25,12 +25,12 @@
 	# $Nav->setLinkList(array());
 	
 	# Break the navigation into sections
-	$Nav->addNavSeparator("Gemini Blueprint ", 	"/blueprint");
-	$Nav->addCustomNav("Download", "/blueprint/download", "_self", 3);
-	$Nav->addCustomNav("Documentation", "/blueprint/documentation", "_blank", 3);
-	$Nav->addCustomNav("Support", "/blueprint/support", "_blank", 3);
-	$Nav->addCustomNav("Getting Involved", "/blueprint/contribute", "_blank", 3);
-	$Nav->addCustomNav("History", "/blueprint/history", "_blank", 3);
+	#$Nav->addNavSeparator("Gemini Blueprint ", 	"/blueprint");
+	#$Nav->addCustomNav("Download", "/blueprint/download", "_self", 3);
+	#$Nav->addCustomNav("Documentation", "/blueprint/documentation", "_blank", 3);
+	#$Nav->addCustomNav("Support", "/blueprint/support", "_blank", 3);
+	#$Nav->addCustomNav("Getting Involved", "/blueprint/contribute", "_blank", 3);
+	#$Nav->addCustomNav("History", "/blueprint/history", "_blank", 3);
 
 	# Define keywords, author and title here, or in each PHP page specifically
 	
