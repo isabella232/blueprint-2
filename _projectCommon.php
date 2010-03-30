@@ -8,7 +8,7 @@
  * http://www.eclipse.org/legal/epl-v10.html
  *
  * Contributors:
- *    Costin Leau, VMware
+ *    
  *******************************************************************************/
 
 	# Set the theme for your project's web pages.
@@ -25,18 +25,17 @@
 	# $Nav->setLinkList(array());
 	
 	# Break the navigation into sections
-	#$Nav->addNavSeparator("Gemini Blueprint ", 	"/blueprint");
-	#$Nav->addCustomNav("Download", "/blueprint/download", "_self", 3);
-	#$Nav->addCustomNav("Documentation", "/blueprint/documentation", "_blank", 3);
-	#$Nav->addCustomNav("Support", "/blueprint/support", "_blank", 3);
-	#$Nav->addCustomNav("Getting Involved", "/blueprint/contribute", "_blank", 3);
-	#$Nav->addCustomNav("History", "/blueprint/history", "_blank", 3);
+	$Nav->addNavSeparator("MyProject", 	"/default");
+	$Nav->addCustomNav("Download", "/project/download.php", "_self", 3);
+	$Nav->addCustomNav("Documentation", "/project/documentation.php", "_blank", 3);
+	$Nav->addCustomNav("Support", "/project/support.php", "_blank", 3);
+	$Nav->addCustomNav("Getting Involved", "/project/developers", "_blank", 3);
 
 	# Define keywords, author and title here, or in each PHP page specifically
-	
+	#$pageKeywords	= "eclipse, osgi, blueprint, spring, ioc, dynamic, services, rfc-124"
 	$pageAuthor		= "Costin Leau";
-  $pageTitle 		= "Eclipse Gemini Blueprint - Incubation";
-  $pageKeywords	= "eclipse, osgi, blueprint, spring, ioc, dynamic, services, rfc-124"
+    $pageTitle 		= "Eclipse Gemini Blueprint - Incubation";
+
 
 	# top navigation bar
 	# To override and replace the navigation with your own, uncomment the line below.
@@ -48,11 +47,11 @@
 	# $Menu->addMenuItem("Developers", "/project/developers", "_self");
 	
 	# To define additional CSS or other pre-body headers
-	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="/blueprint/resources/style.css"/>');
+	# $App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="/default/style.css"/>');
 	
 	# To enable occasional Eclipse Foundation Promotion banners on your pages (EclipseCon, etc)
 	$App->Promotion = TRUE;
 	
 	# If you have Google Analytics code, use it here
-	$App->SetGoogleAnalyticsTrackingCode("UA-2728886-3");
+	# $App->SetGoogleAnalyticsTrackingCode("YOUR_CODE");
 ?>
