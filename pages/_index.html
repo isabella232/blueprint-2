@@ -1,17 +1,3 @@
-<div id="bigbuttons">
-<h3>Primary Links</h3>
-<ul>
-	<li><a id="buttonDownload" href="download.php" title="Download">Eclipse
-	Distribution, Update Site, Dropins</a></li>
-	<li><a id="buttonDocumentation" href="midcolumn_example.php"
-		title="Documentation">Tutorials, Examples, Videos, Reference Documentation</a></li>
-	<li><a id="buttonSupport" href="midcolumn_example.php" title="Download">Bug
-	Tracker, Newsgroup, Professional Support</a></li>
-	<li><a id="buttonInvolved" href="midcolumn_example.php" title="Getting Involved">CVS,
-	Workspace Setup, Wiki, Committers</a></li>
-</ul>
-</div>
-
 <div id="midcolumn">
 <h3>Gemini Blueprint</h3>
 <div id="introText">
@@ -23,47 +9,72 @@
 Gemini users may also be interested in Eclipse <a href="http://www.eclipse.org/virgo">Virgo</a>, an open source, completely modular, OSGi-based Java application server. Its documentation is considered a supplement to Gemini Blueprint as it explains in detail, how OSGi can be used in various development and production scenarios.
 </p>
 </div>
-<!-- 
-<div id="screencast">
-<object width="640" height="480"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=8260921&amp;server=vimeo.com&amp;show_title=0&amp;show_byline=0&amp;show_portrait=0&amp;color=DBD7EF&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=8260921&amp;server=vimeo.com&amp;show_title=0&amp;show_byline=0&amp;show_portrait=0&amp;color=DBD7EF&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="640" height="480"></embed></object>
-</div>
--->
-
-<!-- 
-<h3>...and yet powerful</h3>
- 
-<div id="feature_1">
-
-<h4>Some cool feature</h4>
-<p>MyProject has this really cool feature that you describe here in few words, just as a teaser.</p>
-</div>
-
-<div id="feature_2">
-<h4>Another Feature</h4>
-<p>When working with MyProject, great things happen, and one of them is described here.</p>
-</div>
-
-<div id="feature_3">
-<h4>Another Feature</h4>
-<p>When working with MyProject, great things happen, and one of them is described here.</p>
-</div>
-
-<div id="feature_4">
-<h4>User Experience</h4>
-<p>
-Experiment with style.css to create columns for text, just the way you want it. This section 
-is a bit wider and can contain more words, even small logos or graphics to describe a neat feature in more detail.</p>
-</div>
-
-<div id="feature_more">
-<h4>and much more...</h4>
-<p>Read the MyProject <a href="/project/documentation.php">documentation</a> and join the discussion at the <a href="http://www.eclipse.org/forums/eclipse.newsgroup.name">forum</a> to understand how powerful MyProject is.</p>
-<p> Want to know more? <a href="/projects/project_summary.php?projectid=rt.gemini.blueprint">About This Project</a>
-</div>
-</div>
--->
 
 <div id="rightcolumn">
+		<div class="sideitem">
+			<h6>Quick Links</h6>
+			<ul>
+			<!--
+				<li><a href="http://wiki.eclipse.org/blueprint">Gemini Blueprint Wiki</a></li>
+				-->
+				<li><a href="http://www.eclipse.org/forums/index.php?t=thread&frm_id=153">Gemini Forum</a></li>  
+				<li><a href="https://dev.eclipse.org/mailman/listinfo/gemini-dev">Developer Mailing List</a></li>
+				<li><a href="http://www.eclipse.org/projects/project_summary.php?projectid=rt.gemini.blueprint">Project Summary</a></li>
+				<li><a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced;order=Importance;product=Gemini.Blueprint">Gemini Blueprint Bugzilla</a></li>
+			</ul>
+		</div>
+		<div class="sideitem">
+			<h6>Incubation</h6>
+			<div id="incubation">
+				<a href="/projects/what-is-incubation.php">
+					<img align="center" src="images/egg-incubation.png" border="0" alt="Incubation" />
+				</a>
+			</div>
+		</div>
+		<div class="sideitem">
+			<div align="left" id="twtr-search-widget"></div>
+			<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+			<script>
+				new TWTR.Widget({
+          version: 2,
+          type: 'search',
+          search: '#blueprint OR springdm OR eclipse gemini',
+				  interval: 10000,
+				  title: 'What\'s being said about...',
+				  subject: 'Gemini Blueprint',
+				  width: 240,
+				  height: 400,
+				  theme: {
+				    shell: {
+				      background: '#002E62',
+				      color: '#ffffff'
+				    },
+				    tweets: {
+				      background: '#ffffff',
+				      color: '#444444',
+				      links: '#002E62'
+				    }
+				  },
+				  features: {
+				    scrollbar: true,
+            loop: true,
+            live: true,
+            hashtags: true,
+            timestamp: true,
+            avatars: true,
+            behavior: 'default'
+          }
+				}).render().start();
+			</script>
+			<br/><font size=-1>Follow: <a href="http://twitter.com/costinl">Costin Leau</a> (lead)
+			<br/>Follow: <a href="http://twitter.com/adriancolyer">Adrian Colyer</a></font>
+		</div>			
+		<!-- div class="sideitem">
+			<h6>&lt;h6&gt; tag</h6>
+				<div class="modal">
+					Wrapping your content using a div.modal tag here will add the gradient background
+				</div>
+		</div -->
 
 <div class="sideitem">
  <h6>Incubation</h6>
@@ -73,20 +84,15 @@ is a bit wider and can contain more words, even small logos or graphics to descr
    </div>
 </div>
 <div>
-<h3>Current Status</h3>
-<p>Blueprint project is undergoing initial code provisioning (based on Spring Dynamic Modules <a href="http://www.springframework.org/osgi">project</a>)</p>
+  <h3>Current Status</h3>
+	<p>Blueprint project is undergoing initial code provisioning (based on Spring Dynamic Modules <a href="http://www.springframework.org/osgi">project</a>)</p>
 </div>
 
-<div id="headlines">
-<h3>New and Noteworthy</h3>
-<p>... or a link to your new and noteworthy.</p>
-</div>
+	<div id="headlines">
+	     <h3>New and Noteworthy</h3>
+		<p>... or a link to your new and noteworthy.</p>
+	</div>
 <!-- 
-<div id="headlines">
-<h3>Headlines on the web</h3>
-<p>Project headlines...</p>
-</div>
-
 <div id="headlines">
 <h3>Another announcement</h3>
 <p>MyProject is pleased to announce...</p>
