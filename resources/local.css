@@ -45,19 +45,3 @@ a:hover {
 #search #searchBox {
 	width:220px;
 }
-
-#leftnav li a
-{
-	font-size: 12px;
-	line-height: 12px;
-}
-#leftnav li.about
-{
-	font-size: 12px;
-	line-height: 12px;
-}
-#leftnav li.about a
-{
-	color: #333333;
-	font-size: 12px;
-}
