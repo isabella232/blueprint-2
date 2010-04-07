@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml-stylesheet type="text/xsl" href="http://www.eclipse.org/projects/project-plan.xsl"?>
+<plan plan-format="1.0" xmlns="http://www.eclipse.org/project/plan" xmlns:html="http://www.w3.org/1999/xhtml" name="Gemini Blueprint">
+   <release projectid="rt.gemini.blueprint" version="1.0.0"/>
+   <introduction>
+     <html:div>Initial incubation release</html:div>
+   </introduction>
+   <release_deliverables>
+     <html:div>Code archive (JARs+ ZIP)</html:div>
+   </release_deliverables>
+   <release_milestones>
+      <preamble>
+         <html:div>Milestones leading to 1.0.0. release</html:div>
+      </preamble>
+      <milestone date="31/06/2010" milestone="1.0.0 M1"><html:div>Tentative release</html:div></milestone>
+      <postamble />
+   </release_milestones>
+   
+   <target_environments>
+     <html:div>Gemini Blueprint is intended for OSGi 4.2 platforms.</html:div>
+     <internationalization>
+          <html:div></html:div>
+     </internationalization>
+   </target_environments>
+   
+   <compatibility_with_previous_releases>
+       <html:div></html:div>
+   </compatibility_with_previous_releases>
+   <themes_and_priorities />
+   <appendix />
+</plan>
