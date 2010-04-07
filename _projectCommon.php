@@ -26,6 +26,7 @@
 	
 	# Break the navigation into sections
 	$Nav->addNavSeparator("Gemini Blueprint ", 	"/blueprint");
+	$Nav->addCustomNav("About This Project","/projects/project_summary.php?projectid=rt.gemini.blueprint", "_self", 3);
 	$Nav->addCustomNav("Download", "/blueprint/download", "_self", 3);
 	$Nav->addCustomNav("Documentation", "/blueprint/documentation", "_self", 3);
 	$Nav->addCustomNav("Support", "/blueprint/support", "_self", 3);
@@ -36,7 +37,7 @@
 	# Define keywords, author and title here, or in each PHP page specifically
 	$pageKeywords	= "eclipse, osgi, blueprint, spring, ioc, dynamic, services, rfc-124";
 	$pageAuthor		= "Costin Leau";
-    $pageTitle 		= "Eclipse Gemini Blueprint - Incubation";
+  $pageTitle 		= "Eclipse Gemini Blueprint - Incubation";
 
 
 	# top navigation bar
