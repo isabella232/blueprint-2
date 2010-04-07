@@ -26,7 +26,7 @@
 	
 	# Break the navigation into sections
 	$Nav->addNavSeparator("Gemini Blueprint ", 	"/blueprint");
-	$Nav->addCustomNav("Project Info","/projects/project_summary.php?projectid=rt.gemini.blueprint", "_self", 3);
+	$Nav->addCustomNav("About This Project","http://www.eclipse.org/projects/project_summary.php?projectid=rt.gemini.blueprint", "_self", 3);
 	$Nav->addCustomNav("Download", "/blueprint/download", "_self", 3);
 	$Nav->addCustomNav("Documentation", "/blueprint/documentation", "_self", 3);
 	$Nav->addCustomNav("Support", "/blueprint/support", "_self", 3);
