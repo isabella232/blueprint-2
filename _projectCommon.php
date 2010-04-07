@@ -27,11 +27,11 @@
 	# Break the navigation into sections
 	$Nav->addNavSeparator("Gemini Blueprint ", 	"/blueprint");
 	$Nav->addCustomNav("About This Project","http://j.mp/afOxmR", "_self", 3);
-	$Nav->addCustomNav("Download", "/blueprint/download", "_self", 3);
-	$Nav->addCustomNav("Documentation", "/blueprint/documentation", "_self", 3);
-	$Nav->addCustomNav("Support", "/blueprint/support", "_self", 3);
-	$Nav->addCustomNav("Getting Involved", "/blueprint/contribute", "_self", 3);
-	$Nav->addCustomNav("History", "/blueprint/history", "_self", 3);
+	$Nav->addCustomNav("Download", "/gemini/blueprint/download", "_self", 3);
+	$Nav->addCustomNav("Documentation", "/gemini/blueprint/documentation", "_self", 3);
+	$Nav->addCustomNav("Support", "/gemini/blueprint/support", "_self", 3);
+	$Nav->addCustomNav("Getting Involved", "/gemini/blueprint/contribute", "_self", 3);
+	$Nav->addCustomNav("History", "/gemini/blueprint/history", "_self", 3);
 
 
 	# Define keywords, author and title here, or in each PHP page specifically
