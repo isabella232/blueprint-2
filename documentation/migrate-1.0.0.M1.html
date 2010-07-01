@@ -1,0 +1,34 @@
+<div id="midcolumn">
+	<h2>Migrating from Spring Dynamic Modules to Eclipse Gemini Blueprint 1.0.0.M1</h2>
+	
+	
+	<p>This guide is aimed at helping developers using Spring DM in their application to migrate to Eclipse Gemini Blueprint. Note that the migration 
+	to the Eclipse Foundation is not yet complete and this document might not reflect all the changes that occurred in the process. See the 
+	support page for more info on getting accurate information.</p>
+	
+	<h3>Overview</h3>
+	<p>Gemini Blueprint was created through the migration of Spring Dynamic Modules to the Eclipse Foundation. While certain things have
+	changed in the process, mainly to reflect the new project name and hosting infrastructure, the project architecture, ideas, code base and dependencies
+	have remained intact. Use this to your advantage when encountering errors, by looking first for references to 'old' packages or classes as these are likely
+	to be the problem in the vast majority of cases.
+	</p>
+	
+	<h3>Changed Package Name</h3>
+	<p>The most disruptive change for Spring DM users when transitioning to Gemini Blueprint is the renaming of the project packages: 
+	from <pre>org.springframework.osgi</pre> to <pre>org.eclipse.gemini.blueprint</pre>. If you are referring to the Spring DM classes, in any way,
+	either inside Java code or XML configuration, you need to update the package.<br/>
+	The actual class names and method signatures have <b>not</b> been changed so in most cases the changed can be accommodated through a simple "search & replace"
+	operation.<br/>
+	Note that for configuration purposes, one can shield itself from the package change by relying on the Spring DM/Eclipse Gemini Blueprint namespaces 
+	which hide the actual classes used for configuring, making the change transparent.	 
+	</p>
+	
+	<h3>Changed Namespace/Schema Location</h3>
+	<p>While not yet implemented in M1, the existing Spring DM schema definition (named <pre>spring-osgi.xsd</pre> and located at <pre>http://www.springframework.org/schema/osgi</pre>)
+	will be renamed and moved according to the existing Eclipse patterns. For M1, developers can still rely on the old location or, if versioning is used, use <pre>spring-osgi-2.0.0.m2</pre>.
+	Be advised that this <b>will change</b> in the upcoming releases.
+	
+	<h3>Removed deprecated classes</h3>
+	<p>During the move, several deprecated or unused classes have been removed. If you cannot find a class name in the new package, it's likely that it has been removed in the process. Feel free
+	to confirm this over the forums. Once the migration completes, we plan to provide a complete list of classes removed in this document.</p>
+</div>
