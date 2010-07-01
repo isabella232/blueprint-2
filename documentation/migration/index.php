@@ -23,7 +23,7 @@
 	$pageTitle 		= "Gemini OSGi Blueprint - Documentation - Migration";
 	
 	// 	# Paste your HTML content between the EOHTML markers!
-	$html = file_get_contents('_migrate.html');
+	$html = file_get_contents('_migration.html');
 
 	# Generate the web page
 	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
