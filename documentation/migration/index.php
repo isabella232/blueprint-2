@@ -20,10 +20,10 @@
  *******************************************************************************/
 
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "Gemini OSGi Blueprint - Documentation - Migration";
+	$pageTitle 		= "Gemini OSGi Blueprint - Documentation - Migrating to Gemini Blueprint";
 	
 	// 	# Paste your HTML content between the EOHTML markers!
-	$html = file_get_contents('_migration.html');
+	$html = file_get_contents('_index.html');
 
 	# Generate the web page
 	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
