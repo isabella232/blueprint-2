@@ -25,6 +25,10 @@
 	which hide the actual classes used for configuring, making the change transparent.	 
 	</p>
 	
+	<h3>Manifest updates</h3>
+	<p>Inherent to the package name changes, the manifests have been updated as well. Besides changing the imported package names as indicated above, the imported version should be
+	modified to <tt>1.0.0</tt> (or <tt>1.0.0.M1</tt> for wiring only to the M1 artifact).
+	
 	<h3>Changed Namespace/Schema Location</h3>
 	<p>While not yet implemented in M1, the existing Spring DM schema definition (named <tt>spring-osgi.xsd</tt> and located at <tt>http://www.springframework.org/schema/osgi</tt>)
 	will be renamed and moved according to the existing Eclipse patterns. For M1, developers can still rely on the old location or, if versioning is used, use <tt>spring-osgi-2.0.0.m2</tt>.
@@ -33,4 +37,25 @@
 	<h3>Removed deprecated classes</h3>
 	<p>During the move, several deprecated or unused classes have been removed. If you cannot find a class name in the new package, it's likely that it has been removed in the process. Feel free
 	to confirm this over the forums. Once the migration completes, we plan to provide a complete list of classes removed in this document.</p>
+
+	<h3>Removed deprecated modules</h3>
+	<p>As of M1, not all modules or projects inside Spring DM have been moved. At the moment only the <tt>io</tt>, <tt>core</tt>, <tt>extender</tt> and <tt>test</tt> modules have transitioned
+	are provided in M1. With the up-coming release of OSGi RFC-66, the web support is being discontinued. Existing users are encouraged to look at Eclipse Gemini Web 
+	<a href="http://www.eclipse.org/gemini/blueprint/">project</a>. The plans for the Maven archetype and annotation extension are undefined for the moment.</p>
+	
+	<h3>Changed Maven artifact groupId/artifactId and repository</h3>
+	<p>The Maven artifacts have changed as well during the transition. For the time being, the artifacts are hosted at a new repository (<tt>zodiac.springsource.com</tt>):
+	  <pre>
+  &lt;repository&gt;
+    &lt;id&gt;zodiac-repository&lt;/id&gt;
+    &lt;name&gt;Zodiac Milestone Repository&lt;/name&gt;
+    &lt;url&gt;http://zodiac.springsource.com/maven/bundles/milestone&lt;/url&gt;
+  &lt;/repository&gt;
+  	 </pre>
+    The groupId has changed from <tt>org.springframework.osgi</tt> to <tt>org.eclipse.gemini.blueprint</tt> and artifactId from <tt>spring-osgi-*</tt> to <tt>gemini-blueprint-*</tt> (e.g.
+    <tt>spring-osgi-core</tt> is now <tt>gemini-blueprint-core</tt>).		
+	</p>
+	
+	<p>The content and names of the artifacts have remained mainly unchanged.</p>
+	
 </div>
