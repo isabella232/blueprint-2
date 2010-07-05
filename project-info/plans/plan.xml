@@ -8,11 +8,13 @@
    <release_deliverables>
      <html:div>Code archive (JARs+ ZIP)</html:div>
    </release_deliverables>
+
    <release_milestones>
       <preamble>
          <html:div>Milestones leading to 1.0.0. release</html:div>
       </preamble>
-      <milestone date="31/06/2010" milestone="1.0.0 M1"><html:div>Tentative release</html:div></milestone>
+      <milestone date="30/10/2010" milestone="1.0.0 M2"><html:div>Tentative milestone</html:div></milestone>
+      <milestone date="30/06/2010" milestone="1.0.0 M1"><html:div>Completed</html:div></milestone>
       <postamble />
    </release_milestones>
    
