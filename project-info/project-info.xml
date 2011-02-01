@@ -4,18 +4,22 @@
   <short-name>Blueprint</short-name>
   
   <bugzilla>
-    <product name="Blueprint"/>
+    <product name="gemini.Blueprint"/>
   </bugzilla>
 
   <!-- 
   <team url="/gemini/blueprint/about.php" />
-  <cvs repository="/svnroot/rt/">
-    <module path="rt/org.eclipse.gemini.blueprint" /> 
-  </cvs>
   -->
+  <cvs repository="/rt/">
+    <module path="org.eclipse.gemini.blueprint" /> 
+  </cvs>
 
-  <description url="/gemini/blueprint/about.php"
+  <description url="/gemini/blueprint/project-info/description.html"
      paragraph-url="/gemini/blueprint/project-info/project-page-paragraph.html"/>
+  
+  <summary paragraph-url="/gemini/blueprint/project-info/executive-summary.html"/>
+  
+  <ip-log url="http://www.eclipse.org/projects/ip_log.php?projectid=rt.gemini.blueprint" /> 
   
   <releases>
   </releases>
