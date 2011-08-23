@@ -3,7 +3,7 @@
 <plan plan-format="1.0" xmlns="http://www.eclipse.org/project/plan" xmlns:html="http://www.w3.org/1999/xhtml" name="Gemini Blueprint">
    <release projectid="rt.gemini.blueprint" version="1.0.0"/>
    <introduction>
-     <html:div>Initial incubation release</html:div>
+     <html:div>Initial Graduation Release</html:div>
    </introduction>
    <release_deliverables>
      <html:div>Code archive (JARs+ ZIP)</html:div>
@@ -13,8 +13,10 @@
       <preamble>
          <html:div>Milestones leading to 1.0.0. release</html:div>
       </preamble>
-      <milestone date="30/10/2010" milestone="1.0.0 M2"><html:div>Tentative milestone</html:div></milestone>
-      <milestone date="30/06/2010" milestone="1.0.0 M1"><html:div>Completed</html:div></milestone>
+      <milestone date="01/01/2012" milestone="1.0.1.RELEASE"><html:div>Planned</html:div></milestone>
+      <milestone date="22/08/2011" milestone="1.0.0.RELEASE"><html:div>Completed</html:div></milestone>
+      <milestone date="20/06/2011" milestone="1.0.0.RC"><html:div>Completed</html:div></milestone>
+      <milestone date="30/06/2010" milestone="1.0.0.M1"><html:div>Completed</html:div></milestone>
       <postamble />
    </release_milestones>
    
