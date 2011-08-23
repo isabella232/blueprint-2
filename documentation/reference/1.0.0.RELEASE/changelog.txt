@@ -1,0 +1,68 @@
+ECLIPSE GEMINI BLUEPRINT CHANGELOG
+==================================
+http://www.eclipse.org/gemini/blueprint
+
+Changes in version 1.0.0 RELEASE (2011-08-22)
+---------------------------------------------
+
+General
+* upgraded to Spring Framework 3.0.6
+* Improved Javadoc documentation
+
+Package org.eclipse.gemini.blueprint.extender
+* fixed bug that prevented namespaces of bundles already resolved to be considered
+
+Package org.eclipse.gemini.blueprint.service
+* reintroduced Spring DM specific properties on imported services
+
+
+Changes in version 1.0.0 RC1 (2011-06-20)
+-----------------------------------------
+
+General
+* upgraded to Spring Framework 3.0.4
+* upgraded to Equinox 3.6.2
+* upgraded to Felix 2.0.5
+* upgraded to Knopflerfish 3.1.0
+* migrated Spring DM documentation to Eclipse Gemini Blueprint
+* introduced Gemini Blueprint schemas (gemini-blueprint.xsd and gemini-blueprint-compendium.xsd)
+
+Package org.eclipse.gemini.blueprint.context
+* reintroduced Spring DM specific properties on exported services
+* fixed bug occuring in context service publication when a Java security manager is enabled
+
+Package org.eclipse.gemini.blueprint.extender
+* introduced system property for filtering the state of namespace bundles scanned by the extender
+* reverted the filtering of namespace bundles to RESOLVED (instead of STARTED - which can still be selected)
+* fixed bug preventing custom timeouts to be configured on the extender
+
+Package org.eclipse.gemini.blueprint.service
+* reintroduced Spring DM specific properties on exported services
+
+
+Changes in version 1.0.0 M1 (2010-06-30)
+----------------------------------------
+
+General
+* renamed packages to reflect the move to Eclipse Gemini (org.springframework.osgi -> org.eclipse.gemini.blueprint)
+* namespace definitions are still called spring-osgi.xsd/spring-osgi-compendium.xsd in this release
+* upgraded to Felix 2.0.2
+* upgraded to Knopflerfish 3.0.0.beta3
+* upgraded to CGLib 2.2.0
+* removed 'update-strategy' attribute (spring-osgi-compendium.xsd)
+* improved timeout schema types to improve declaration validation
+* introduced two extra attributes to 'cm-properties' element (spring-osgi-compendium.xsd)
+* introduced service-properties to 'managed-service-factory' element (spring-osgi-compendium.xsd)
+
+Package org.eclipse.gemini.blueprint.compendium
+* improved configuration admin update handling by supporting both container and bean management on the same declaration
+* introduced initialization timeout option to cm-properties
+* introduced lazy initialization option to cm-properties
+* introduced service properties option to managed-service-factory
+
+Package org.eclipse.gemini.blueprint.io
+* improved pattern matching against jar entries in the bundle classpath
+* fixed pattern matching against packages imported from bundles with custom classpaths
+
+Package org.eclipse.gemini.blueprint.test
+* added check for unresolved fragments during test startup
