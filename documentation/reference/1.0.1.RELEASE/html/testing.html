@@ -141,7 +141,7 @@ Reason: Missing Constraint: Import-Package: org.apache.commons.lang.time; versio
      It's likely that in the future, various other locators will be available. One can plug in their own 
      locator through the <code class="interfacename">org.eclipse.gemini.blueprint.test.provisioning.ArtifactLocator</code> interface.
      </p><p>Let's fix our integration test by installing the required bundle (and some extra osgi libraries):</p><pre class="programlisting"><span class="hl-keyword">protected</span> String[] getTestBundlesNames() {
-	 <span class="hl-keyword">return</span> <span class="hl-keyword">new</span> String[] { <span class="hl-string">"net.sourceforge.cglib, com.springsource.net.sf.cglib, 2.1.3"</span>,
+	 <span class="hl-keyword">return</span> <span class="hl-keyword">new</span> String[] { <span class="hl-string">"net.sourceforge.cglib, com.springsource.net.sf.cglib, 2.2.0"</span>,
 	 	<span class="hl-string">"javax.transaction, com.springsource.javax.transaction, 1.1.0"</span>,
 	 	<span class="hl-string">"commons-lang, commons-lang, 2.4"</span> };
 	 };
