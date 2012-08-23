@@ -23,7 +23,7 @@
 	# Define these here, or in _projectCommon.php for site-wide values
 	$pageTitle 		= "Eclipse Gemini Blueprint - Home";
 	
-	// 	# Paste your HTML content between the EOHTML markers!
+	// # Paste your HTML content between the EOHTML markers!
 	$html = file_get_contents('home/_index.html');
 
 	# Generate the web page
