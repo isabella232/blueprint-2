@@ -32,13 +32,13 @@
 	$Nav->addCustomNav("Support", "/gemini/blueprint/support", "_self", 3);
 	$Nav->addCustomNav("Getting Involved", "/gemini/blueprint/contribute", "_self", 3);
 	$Nav->addCustomNav("History", "/gemini/blueprint/history", "_self", 3);
-	$Nav->addCustomNav("Gemini Home", 	"/gemini/blueprint");
+	$Nav->addCustomNav("Gemini Home", 	"/gemini");
 
 
 	# Define keywords, author and title here, or in each PHP page specifically
 	$pageKeywords	= "eclipse, osgi, blueprint, spring, ioc, dynamic, services, rfc-124";
 	$pageAuthor		= "Costin Leau";
-	$pageTitle 		= "Eclipse Gemini Blueprint - Incubation";
+	$pageTitle 		= "Eclipse Gemini Blueprint";
 
 
 	# top navigation bar
