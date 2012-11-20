@@ -1,4 +1,17 @@
 <div id="midcolumn">
+	<h1>Migrating from Gemini Blueprint 1.0.x to 2.0.0</h1>
+	<ul>
+		<li>
+			<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=356683">Bug 356683</a>: extender configuration is created once rather than twice and then applied to both Blueprint and Spring DM extenders.
+		</li>
+		<li>
+			<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=393960">Bug 393960</a>: Gemini Blueprint 2.0.0 is built with Java 6, unlike 1.0.x which was built with Java 5.
+		</li>
+		<li>
+			<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=394116">Bug 394116</a>: No attempt is made to activate lazily activated bundles. The 1.0.x code attempted to do this but was only successful in most cases due to an <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=nnnnnn">Equinox bug nnnnnn</a> which is now fixed.
+		</li>
+	</ul>
+
 	<h1>Migrating from Spring Dynamic Modules to Eclipse Gemini Blueprint</h1>
 	
 	
