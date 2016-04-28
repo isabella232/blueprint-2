@@ -1,15 +1,15 @@
 <div id="midcolumn">
 	<h1>Migrating from Gemini Blueprint 1.0.x to 2.0.0</h1>
+
+	Gemini Blueprint 2.0.0 now requires Spring 4.2.x and requires Java 1.7+ to run. Furthermore, OSGi Spring bundles are now provided by the Apache ServiceMix team.
+	Both the Gemini Blueprint artifacts and the Spring OSGi artifacts are available from maven central. For more details, see
+	<a href="https://www.eclipse.org/gemini/blueprint/download/">Download Gemini Blueprint</a>. To migrate, one must thus:
+
 	<ul>
-		<li>
-			<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=356683">Bug 356683</a>: extender configuration is created once rather than twice and then applied to both Blueprint and Spring DM extenders.
-		</li>
-		<li>
-			<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=393960">Bug 393960</a>: Gemini Blueprint 2.0.0 is built with Java 6, unlike 1.0.x which was built with Java 5.
-		</li>
-		<li>
-			<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=394116">Bug 394116</a>: No attempt is made to activate bundles with a lazy activation policy. The 1.0.x code attempted to do this but was only successful on Equinox due to an <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=nnnnnn">Equinox bug nnnnnn</a> which is now fixed.
-		</li>
+		<li>Use Spring 4.2.x</li>
+		<li>Run at Least Java 1.7</li>
+		<li>Update the maven dependencies to reflect the group and artifaact id changes of the spring dependencies</li>
+		<li>Remove outdated repository configurations as everything is now available via maven central</li>
 	</ul>
 
 	<h1>Migrating from Spring Dynamic Modules to Eclipse Gemini Blueprint</h1>

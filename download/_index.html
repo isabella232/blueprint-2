@@ -4,16 +4,49 @@
 		All downloads are provided under the terms and conditions of the <a href="/legal/epl/notice.php">Eclipse Foundation Software User Agreement</a> 
 		unless otherwise specified.
 	</p>
-  <h2>Latest version - 1.0.2.RELEASE</h2>
-  <a href="http://www.eclipse.org/downloads/download.php?file=/blueprint/gemini-blueprint-1.0.2.RELEASE.zip">Gemini Blueprint 1.0.2.RELEASE</a>
-  
-  <h2>Recent milestones</h2>
+    <h2>Latest version - 2.0.0.RELEASE</h2>
+
+    As of 2.0.0, the gemini blueprint artifacts are available directly from <a href="http://search.maven.org/#search|ga|1|g%3Aorg.eclipse.gemini.blueprint">maven central</a>.
+    You may reference them in a maven pom, like so:
+
+    <div class="editor" data-editor-lang="xml" data-editor-no-focus="true">
+        <dependency>
+            <groupId>org.eclipse.gemini.blueprint</groupId>
+            <artifactId>gemini-blueprint-io</artifactId>
+            <version>2.0.0.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.gemini.blueprint</groupId>
+            <artifactId>gemini-blueprint-extender</artifactId>
+            <version>2.0.0.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.gemini.blueprint</groupId>
+            <artifactId>gemini-blueprint-core</artifactId>
+            <version>2.0.0.RELEASE</version>
+        </dependency>
+    </div>
+
+    <p>The additional mock and test dependencies are available via</p>
+
+    <div class="editor" data-editor-lang="xml" data-editor-no-focus="true">
+        <dependency>
+            <groupId>org.eclipse.gemini.blueprint</groupId>
+            <artifactId>gemini-blueprint-mock</artifactId>
+            <version>2.0.0.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.gemini.blueprint</groupId>
+            <artifactId>gemini-blueprint-test</artifactId>
+            <version>2.0.0.RELEASE</version>
+        </dependency>
+    </div>
+
+  <h2>Previous milestones</h2>
   <a href="http://www.eclipse.org/downloads/download.php?file=/blueprint/gemini-blueprint-2.0.0.M02.zip">Gemini Blueprint 2.0.0.M02</a>
 
   <h3>Maven Repository</h3>
-  Note that Gemini Blueprint does not yet participate in the Gemini Maven repository.
-  
-  When it does, the groupId will be <tt>org.eclipse.gemini.blueprint</tt> while the artifactIds will be <tt>gemini-blueprint-*</tt> (e.g. <tt>gemini-blueprint-core</tt>).  
+  As of release 2.0.0, the gemini artifacts are available from maven central - no additional repository configuration is required.
 </div>
 
 
