@@ -12,7 +12,7 @@
  *******************************************************************************/
 
 	# Set the theme for your project's web pages.
-	# See http://eclipse.org/phoenix/
+	# See https://wiki.eclipse.org/Using_Phoenix
 	$theme = "solstice";
 	
 
@@ -55,7 +55,9 @@
 	
 	# To enable occasional Eclipse Foundation Promotion banners on your pages (EclipseCon, etc)
 	$App->Promotion = TRUE;
-	
+
+	$App->setDoctype('html5');
+
 	# If you have Google Analytics code, use it here
 	$App->SetGoogleAnalyticsTrackingCode("UA-2728886-3");
 ?>

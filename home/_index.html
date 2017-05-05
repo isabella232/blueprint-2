@@ -1,11 +1,37 @@
 <div id="midcolumn">
-    <h2>Gemini Blueprint 2.1.0.M2 is out</h2>
+    <h2>Gemini Blueprint 2.1.0 is out</h2>
     <p>
-        Gemini 2.1.0.M2 features Spring 4.3.x and annotation-based service injection and requires Java 1.8. gemini blueprint is available via maven central.
+        Gemini 2.1.0 features the latest Spring 4.3.x and annotation-based service injection and requires Java 1.8. gemini blueprint is available via maven central.
         See <a href="https://www.eclipse.org/gemini/blueprint/download/">Download instructions</a>,
-        <a href="https://www.eclipse.org/gemini/blueprint/documentation/reference/2.1.0.M2/html/index.html">Reference documentation</a> and the
-        <a href="http://git.eclipse.org/c/gemini.blueprint/org.eclipse.gemini.blueprint.git/plain/changelog.txt?h=2.1.0.M2">Change log</a>
+        <a href="https://www.eclipse.org/gemini/blueprint/documentation/reference/2.1.0.RELEASE/html/index.html">Reference documentation</a> and the
+        <a href="http://git.eclipse.org/c/gemini.blueprint/org.eclipse.gemini.blueprint.git/plain/changelog.txt?h=2.1.0.RELEASE">Change log</a>
     </p>
+
+    <h2>Annotation-based service injection re-introduced in Gemini Blueprint 2.1.0</h2>
+    <p>
+        The original Spring-DM implementation featured a proprietary extension to the OSGi blueprint spec: Annotation-based service injection
+        into beans without the need for service import declarations in the blueprint XML context.
+        With Gemini Blueprint 2.1.0, this feature has been re-introduced. Now, beans can declare service dependencies like so:
+    </p>
+<pre>
+@ServiceReference(filter = "(service.attribute=some.Attribute)")
+public void setService(ServiceType service) {
+   ....
+}
+</pre>
+
+    <p>or using field-based injection, like so:</p>
+
+<pre>
+@ServiceReference(filter = "(service.attribute=some.Attribute)")
+private ServiceType service;
+</pre>
+
+    <p>
+        The <a href="documentation/reference/2.1.0.RELEASE/service-registry.html#service-registry:annotations-vs-xml-declarations">@ServiceReference annotation</a>
+        supports all attributes found in the XM service import declaration.
+    </p>
+
 
     <h2>Gemini Blueprint</h2>
 
