@@ -28,7 +28,7 @@
 	
 	<h3>Changed Package Name</h3>
 	<p>The most disruptive change for Spring DM users when transitioning to Gemini Blueprint is the renaming of the project packages: 
-	from <tt>org.springframework.osgi</tt> to <tt>org.eclipse.gemini.blueprint</tt>. If you are referring to the Spring DM classes, in any way,
+		from <code>org.springframework.osgi</code> to <code>org.eclipse.gemini.blueprint</code>. If you are referring to the Spring DM classes, in any way,
 	either inside Java code or XML configuration, you need to update the package.<br/>
 	The actual class names and method signatures have <b>not</b> been changed so in most cases the changed can be accommodated through a simple "search & replace"
 	operation.<br/>
@@ -38,41 +38,41 @@
 	
 	<h3>Changed Exported Packages (Versions Included)</h3>
 	<p>Inherent to the package name changes, the artifact manifests have been updated as well. Besides changing the imported package names as indicated above, consumers should modify
-	the imported version to <tt>1.0.0</tt> (or <tt>1.0.0.M1</tt> for wiring only to the M1 artifact).
+		the imported version to <code>1.0.0</code> (or <code>1.0.0.M1</code> for wiring only to the M1 artifact).
 	
 	<h3>Deprecated Namespace/Schema Location</h3>
-	<p>The existing Spring DM schema definition (named <tt>spring-osgi.xsd</tt> and located at <tt>http://www.springframework.org/schema/osgi</tt>) are still available and supported
-	by Eclipse Gemini Blueprint. However we recommend users to migrate to the newly added schemas at <tt>http://www.eclipse.org/gemini/blueprint/schema/blueprint/gemini-blueprint.xsd</tt>
-	and <tt>http://www.eclipse.org/gemini/blueprint/schema/blueprint-compendium/gemini-blueprint-compendium.xsd</tt>. Except for the schema location, the new schemas are identical to the
+	<p>The existing Spring DM schema definition (named <code>spring-osgi.xsd</code> and located at <code>http://www.springframework.org/schema/osgi</code>) are still available and supported
+		by Eclipse Gemini Blueprint. However we recommend users to migrate to the newly added schemas at <code>http://www.eclipse.org/gemini/blueprint/schema/blueprint/gemini-blueprint.xsd</code>
+		and <code>http://www.eclipse.org/gemini/blueprint/schema/blueprint-compendium/gemini-blueprint-compendium.xsd</code>. Except for the schema location, the new schemas are identical to the
 	old ones and will be the target of any new improvements and further development.</p>
 	
 	<h3>Deprecated Spring-DM specific service properties</h3>
-	<p>Similar to the schema deprecation, the Spring-DM specific properties on exported services (such as <tt>org.springframework.osgi.bean.name</tt>) have been deprecated. While they are still supported
-	users are recommended to use the newly introduced Gemini Blueprint props (simply replace <tt>org.sprinframework.osgi</tt> prefix with <tt>org.eclipse.gemini.blueprint</tt>).</p>
+	<p>Similar to the schema deprecation, the Spring-DM specific properties on exported services (such as <code>org.springframework.osgi.bean.name</code>) have been deprecated. While they are still supported
+		users are recommended to use the newly introduced Gemini Blueprint props (simply replace <code>org.sprinframework.osgi</code> prefix with <code>org.eclipse.gemini.blueprint</code>).</p>
 	
 	<h3>Removed deprecated classes</h3>
 	<p>During the move, several deprecated or unused classes have been removed. If you cannot find a class name in the new package, it's likely that it has been removed in the process. Feel free
 	to confirm this over the forums.</p>
 
 	<h3>Removed deprecated modules</h3>
-	<p>As of Gemini Blueprint M1, not all modules or projects inside Spring DM have been moved. At the moment only the <tt>io</tt>, <tt>core</tt>, <tt>extender</tt> and <tt>test</tt> modules have 
+	<p>As of Gemini Blueprint M1, not all modules or projects inside Spring DM have been moved. At the moment only the <code>io</code>, <code>core</code>, <code>extender</code> and <code>test</code> modules have
 	transitioned are provided in M1. With the up-coming release of OSGi RFC-66, the web support is being discontinued. Existing users are encouraged to look at Eclipse Gemini Web 
 	<a href="http://www.eclipse.org/gemini/blueprint/">project</a>. The plans for the Maven archetype and annotation extension are undefined for the moment and these modules are <b>NOT</b> included
 	in Gemini Blueprint project.</p>
 	
 	<h3>Changed Maven artifact groupId/artifactId and repository</h3>
-	<p>The Maven artifacts have changed as well during the transition. For the time being, the artifacts are hosted at a new repository (<tt>zodiac.springsource.com</tt>):
-	  <pre>
+	<p>The Maven artifacts have changed as well during the transition. For the time being, the artifacts are hosted at a new repository (<code>zodiac.springsource.com</code>):	</p>
+
+	<pre>
   &lt;repository&gt;
     &lt;id&gt;zodiac-repository&lt;/id&gt;
     &lt;name&gt;Zodiac Milestone Repository&lt;/name&gt;
     &lt;url&gt;http://zodiac.springsource.com/maven/bundles/milestone&lt;/url&gt;
   &lt;/repository&gt;
   	 </pre>
-    The groupId has changed from <tt>org.springframework.osgi</tt> to <tt>org.eclipse.gemini.blueprint</tt> and artifactId from <tt>spring-osgi-*</tt> to <tt>gemini-blueprint-*</tt> (e.g.
-    <tt>spring-osgi-core</tt> is now <tt>gemini-blueprint-core</tt>).		
-	</p>
-	
+	The groupId has changed from <code>org.springframework.osgi</code> to <code>org.eclipse.gemini.blueprint</code> and artifactId from <code>spring-osgi-*</code> to <code>gemini-blueprint-*</code> (e.g.
+	<code>spring-osgi-core</code> is now <code>gemini-blueprint-core</code>).
+
 	<p>The content and names of the artifacts have remained mainly unchanged.</p>
 	
 </div>
