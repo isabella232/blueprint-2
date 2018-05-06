@@ -13,7 +13,7 @@
 
 	# Set the theme for your project's web pages.
 	# See https://wiki.eclipse.org/Using_Phoenix
-	$theme = "solstice";
+	$theme = "quicksilver";
 	
 
 	# Define your project-wide Navigation here
